@@ -1,0 +1,37 @@
+#S3 Example 
+
+# Create an S3 class
+myS3Class <- function(data) {
+  class(data) <- "myS3Class"
+  return(data)
+}
+
+# Create a generic function for the S3 class
+summary.myS3Class <- function(object) {
+  cat("Summary for myS3Class object\n")
+  # Add your summary logic here
+}
+
+# Create an object of the S3 class
+myObject <- myS3Class(mtcars)
+summary(myObject)
+
+
+#S4 Example 
+
+# Install and load the 'methods' package if not already installed
+# install.packages("methods")
+library(methods)
+
+# Create an S4 class
+setClass("MyS4Class", slots = list(data = "data.frame"))
+
+# Create a method for the S4 class
+setMethod("summary", signature = "MyS4Class", function(object) {
+  cat("Summary for MyS4Class object\n")
+  # Add your summary logic here
+})
+
+# Create an object of the S4 class
+myS4Object <- new("MyS4Class", data = mtcars)
+summary(myS4Object)
