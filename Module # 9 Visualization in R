@@ -1,0 +1,12 @@
+# Basic Histogram
+hist(CigarettesB$price, main = "Distribution of Cigarette Prices", xlab = "Price")
+
+# Lattice Scatterplot Matrix
+library(lattice)
+splom(~CigarettesB[, c("packs", "price", "income")], main = "Scatterplot Matrix")
+
+# ggplot2 Bar Chart
+library(ggplot2)
+ggplot(CigarettesB, aes(x = rownames(CigarettesB), y = income)) +
+  geom_bar(stat = "summary", fun = "mean", fill = "skyblue") +
+  labs(title = "Average Income by Observation", x = "Observation", y = "Average Income")
