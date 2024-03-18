@@ -1,0 +1,8 @@
+Package: Pedraza
+Title: Package for statistical analysis and visualization
+Version: 0.1.0.9000
+Authors@R: "Nicolas Pedraza <nicolas32@usf.edu> [aut, cre]"
+Description: Pedraza is an R package designed to facilitate statistical analysis and visualization. It provides a set of functions for data manipulation, exploratory data analysis, hypothesis testing, regression analysis, and plotting. With Pedraza, users can efficiently perform various statistical tasks, from simple descriptive statistics to complex modeling techniques. Whether you are a beginner or an experienced data analyst, Pedraza aims to streamline your workflow and enhance your data analysis capabilities.
+Depends: R (>= 3.1.2)
+License: CC0
+LazyData: true
