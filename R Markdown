@@ -1,0 +1,82 @@
+# Pedraza R Package Documentation
+
+## Introduction
+
+Welcome to the documentation for the Pedraza R package. This package is designed to facilitate statistical analysis and visualization. In this document, we will describe the main functions included in the package, their purpose, inputs, outputs, and provide examples to illustrate their usage.
+
+## Function 1: descriptive_stats()
+
+### Purpose
+The `descriptive_stats()` function computes descriptive statistics for a given numeric vector.
+
+### Inputs
+- `data`: A numeric vector for which descriptive statistics are to be computed.
+
+### Outputs
+- A list containing the following descriptive statistics:
+  - Mean
+  - Median
+  - Standard deviation
+  - Minimum value
+  - Maximum value
+
+### Example
+```R
+# Load the Pedraza package
+library(Pedraza)
+
+# Create a sample numeric vector
+data <- c(1, 2, 3, 4, 5)
+
+# Compute descriptive statistics
+result <- descriptive_stats(data)
+
+# Print the result
+print(result)
+
+Function 2: plot_histogram()
+Purpose
+The plot_histogram() function creates a histogram plot for a given numeric vector.
+
+Inputs
+data: A numeric vector for which the histogram is to be plotted.
+Outputs
+A histogram plot.
+
+Example
+# Load the Pedraza package
+library(Pedraza)
+
+# Create a sample numeric vector
+data <- c(1, 2, 3, 4, 5)
+
+# Plot histogram
+plot_histogram(data)
+
+Function 3: linear_regression()
+Purpose
+The linear_regression() function performs linear regression analysis on two numeric vectors: predictor and response variables.
+
+Inputs
+x: The predictor variable (independent variable).
+y: The response variable (dependent variable).
+Outputs
+A list containing the following regression results:
+Coefficients
+Residuals
+R-squared value
+
+Example
+
+# Load the Pedraza package
+library(Pedraza)
+
+# Generate sample data
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 4, 5, 4, 5)
+
+# Perform linear regression
+result <- linear_regression(x, y)
+
+# Print regression results
+print(result)
