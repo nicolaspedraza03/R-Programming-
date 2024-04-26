@@ -1,0 +1,5 @@
+export(descriptive_stats)
+export(plot_histogram)
+export(linear_regression)
+import(grDevices)
+import(stats)
