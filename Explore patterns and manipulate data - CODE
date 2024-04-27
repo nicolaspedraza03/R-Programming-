@@ -1,0 +1,15 @@
+# Load required libraries
+library(StatVizR)
+library(dplyr)
+
+# Summary statistics for imdb_score in netflix dataset
+imdb_summary <- descriptive_stats(netflix$imdb_score)
+print(imdb_summary)
+
+# Filter netflix_titles dataset for TV Shows only
+tv_shows <- netflix_titles %>%
+  filter(type == "TV Show")
+
+# Explore genre distribution in netflix_titles dataset
+genre_distribution <- table(netflix_titles$genre)
+print(genre_distribution)
