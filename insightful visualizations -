@@ -1,0 +1,12 @@
+# Load required libraries
+library(StatVizR)
+library(dplyr)
+
+# Plot histogram for runtime in netflix dataset
+plot_histogram(netflix$runtime, x_label = "Runtime", y_label = "Frequency", title = "Distribution of Runtime in Netflix Dataset")
+
+# Plot count of TV Shows by release year
+plot_count(tv_shows$release_year, x_label = "Release Year", y_label = "Count", title = "Count of TV Shows by Release Year")
+
+# Boxplot of imdb_score across different genres in netflix_titles dataset
+plot_boxplot(netflix_titles$genre, netflix_titles$imdb_score, x_label = "Genre", y_label = "IMDB Score", title = "IMDB Score by Genre")
