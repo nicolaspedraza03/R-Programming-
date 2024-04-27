@@ -1,0 +1,11 @@
+# Load required libraries
+library(StatVizR)
+library(dplyr)
+
+# Perform t-test to compare imdb_score between TV Shows and Movies
+t_test_result <- t_test(netflix$imdb_score ~ netflix$type)
+print(t_test_result)
+
+# Perform ANOVA to compare imdb_score across different genres
+anova_result <- anova_test(netflix$imdb_score ~ netflix_titles$genre)
+print(anova_result)
