@@ -1,0 +1,15 @@
+Package: StatVizR
+Type: Package
+Title: Statistical Analysis and Visualization Tools in R
+Version: 0.1.0
+Date: 2024-04-26
+Author: Nicolas Pedraza
+Maintainer: Nicolas Pedraza <nicolas32@usf.com>
+License: CC0
+Description: StatVizR is an R package designed to streamline statistical analysis and visualization tasks.
+It provides a comprehensive set of functions to facilitate data manipulation, exploratory data analysis (EDA), hypothesis testing, regression analysis, and plotting. 
+Whether you're a beginner or an experienced data analyst, StatVizR aims to enhance your data analysis capabilities and streamline your workflow. T
+he package includes functions for computing descriptive statistics, creating various types of plots (e.g., histograms, scatter plots), performing hypothesis tests, and conducting linear regression analysis.
+With StatVizR, you can efficiently analyze your data and visualize your findings, enabling you to make informed decisions based on your data.
+Depends: R (>= 3.1.2)
+RoxygenNote: 7.1.1
