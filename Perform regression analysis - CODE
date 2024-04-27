@@ -1,0 +1,7 @@
+# Load required libraries
+library(StatVizR)
+library(dplyr)
+
+# Linear regression analysis for imdb_score and runtime in netflix dataset
+lm_result <- linear_regression(netflix$runtime, netflix$imdb_score)
+print(lm_result)
